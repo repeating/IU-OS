@@ -1,0 +1,325 @@
+    1  whoami
+    2  hostname
+    3  man <item>
+    4  mna whoami
+    5  man whoami
+    6  whoami
+    7  man man
+    8  --help
+    9  man --help
+   10  man -h
+   11  less
+   12  less --help
+   13  head
+   14  tail
+   15  ls
+   16  /ls
+   17  ls/
+   18  ls\
+   19  whereami
+   20  --help
+   21  -help
+   22  help
+   23  clc
+   24  clear
+   25  ls > list.txt
+   26  head -n 3 < file.txt 
+   27  head -n 3 < list.txt 
+   28  head -n 1 < list.txt 
+   29  head -n 0 < list.txt 
+   30  ls > list.txt
+   31  head -n 3 < list.txt 
+   32  ls > lists.txt
+   33  head -n 3 < list.txt 
+   34  head -n 3 < lists.txt 
+   35  pwd
+   36  mkdir <lab1>
+   37  mkdir<lab1>
+   38  mkdir <lab>
+   39  mkdir <lab1>
+   40  mkdir lab1
+   41  lis
+   42  ls
+   43  rm -r lists.txt
+   44  rm -r list.txt
+   45  ls
+   46  pwd
+   47  cd ~
+   48  pwd
+   49  cd lab1
+   50  pwd
+   51  mkdir ex1
+   52  cd ex1
+   53  cd ..
+   54  rm ex1
+   55  rm -r ex1
+   56  cd --
+   57  rm -r lab1
+   58  touch week1
+   59  rm week1
+   60  ls
+   61  mkdir week1
+   62  cd week1
+   63  cd ..
+   64  cd /
+   65  pwd
+   66  ls
+   67  cd usr
+   68  pwd
+   69  ls
+   70  cd bin
+   71  pwd
+   72  ls
+   73  cd ~
+   74  pwd
+   75  ls /usr/bin
+   76  pwd
+   77  cd pwd
+   78  cd ..\..\
+   79  cd /
+   80  pwd
+   81  ls
+   82  cd /usr/bin
+   83  ls > /home/repeating/week1/exe1.txt
+   84  /home/repeating/week1/exe1.txt
+   85  ~
+   86  cd ~
+   87  cd week1
+   88  exe1.txt
+   89  ls
+   90  cat exe1.txt
+   91  rm exe1.txt
+   92  ls -r /usr/bin/ | grep gcc exe1.txt
+   93  ls
+   94  touch exe1.txt
+   95  ls
+   96  ls -r /usr/bin/ | grep gcc exe1.txt
+   97  nano exe1.txt
+   98  ls -r /usr/bin
+   99  ls -r /usr/bin/ |entries grep gcc > exe1.txt
+  100  ls -r /usr/bin/ |grep gcc > exe1.txt
+  101  nano exe1.txt
+  102  ls -r /usr/bin/ > exe1.txt | grep gcc exe1.txt > exe1.txt
+  103  ls -r /usr/bin | grep gcc > exe1.txt
+  104  ls
+  105  nano exe1.txt
+  106  cat exe1.txt
+  107  ls -r /usr/bin
+  108  ls -r /usr/bin | grep gcc > ./exe1.txt
+  109  nano exe1.txt
+  110  sudo apt install gcc
+  111  ls -r /usr/bin | grep gcc > exe1.txt
+  112  cat exe1.txt
+  113  nano exe1.txt
+  114  grep gcc
+  115  ls /usr/bin
+  116  cd /usr/bin/
+  117  grep gcc 
+  118  echo Hellp
+  119  echo grep gcc
+  120  cat grep gcc
+  121  grep gcc
+  122  cd !
+  123  cd ~
+  124  history 
+  125  history > ex2.txt 
+  126  echo ex2.txt
+  127  cat ex2.txt
+  128  nano ex2.txt
+  129  ls
+  130  mv ex2.txt week1/ex2.txt
+  131  ls
+  132  cd week1
+  133  ls
+  134  rm exe1.txt
+  135  touch ex1.txt
+  136  date
+  137  touch ex3.sh
+  138  nano ex3.sh
+  139  sh ex3.sh
+  140  ls
+  141  cd week1
+  142  ls
+  143  cat ex1.txtt
+  144  cat ex1.txt
+  145  nano ex1.txt
+  146  ls -r /usr/bin/
+  147  ls -r /usr/bin/ | grep gcc > ex1.txt
+  148  nano ex1.txt
+  149  ls -r /usr/bin/ | grep txt > ex1.txt
+  150  nano ex1.txt
+  151  ls -r /usr/bin/ | grep gcc 
+  152  sudo apt install gcc
+  153  ls -r /usr/bin/ | grep "gcc"
+  154  sudo apt update gcc
+  155  ls -r /usr/bin/ | grep py
+  156  sudo apt install build-essential
+  157  whereis gcc
+  158  sudo apt --fix-missing gcc
+  159  sudo --fix-missing gcc
+  160  --fix--missing gcc
+  161  sudo apt-get update gcc
+  162  sudo apt-get gcc
+  163* sudo apt-get clea
+  164  sudo apt install gcc
+  165  ls -r /usr/bin/ | grep gcc
+  166  sudo apt-get clean 
+  167  sudo apt-get update
+  168  sudo apt install gcc
+  169  ls -r /usr/bin/ | grep gcc
+  170  whereis gcc
+  171  ls -r /usr/bin/ | grep gcc ex1.txt
+  172  nano ex1.txt
+  173  ls -r /usr/bin/ | grep gcc > ex1.txt
+  174  nano ex1.txt
+  175  ls -r /usr/bin/ | grep gcc > ex1.txt
+  176  nano ex2.txt
+  177  nano ~/
+  178  ~/
+  179  nano ~/week1/ex1.txt
+  180  nano ex1.txt
+  181  nano ~/week1/ex1.txt
+  182  sh ex3.sh
+  183  gedit main.C
+  184  gedit main.c
+  185  sudo apt install gedit
+  186  gedit main.c
+  187  touch main.c
+  188  gedit main.c
+  189  export DISPLAY=:0
+  190  gedit main.c
+  191  xhost +SI:localuser:root
+  192  sudo apt install gedit
+  193  nano ex4.txt
+  194  ls
+  195  nano main.c
+  196  gcc main.c -o ex4 
+  197  nano main.c
+  198  rm main.c
+  199  gedit ~/week1/main.c 
+  200  ls /etc/sudoers
+  201  gedit admin:///path/to/some/random/file
+  202  cd .
+  203  ls
+  204  cd /
+  205  ls
+  206  cd etc
+  207  ls
+  208  cd sudoers
+  209  nano sudoers
+  210  cd sudoers
+  211  sudoers
+  212  sudoers.d
+  213  cd sudoers.d
+  214  ls
+  215  cd ..
+  216  cd ~
+  217  sudo apt-get claen 
+  218  sudo apt-get clean
+  219  sudo apt-get update
+  220  sudo apt install gedit
+  221  gedit main.c
+  222  sudo gedit main.c
+  223  sudo apt install X-server
+  224  gedit main.c
+  225  nano main.c
+  226  ;s
+  227  ls
+  228  week1
+  229  ls
+  230  cd week1
+  231  ls
+  232  touch main.c
+  233  nano main.c
+  234  gcc main.c -o ex4 
+  235  nano main.c
+  236  gcc main.c -o ex4 
+  237  ls
+  238  ex4
+  239  ./ex4
+  240  nano main.c
+  241  ./ex4
+  242  nano main.c
+  243  gcc main.c -o ex4 
+  244  ./ex4
+  245  sudo apt install GNOME
+  246  sudo apt install VcXsrv
+  247  git status
+  248  cd ~
+  249  git init
+  250  ls
+  251  git add .
+  252  git commit -m "Week1 homework"
+  253  git config --global user.name "repeating"
+  254  git commit -m "Week1 homework"
+  255  git remote add origin https://github.com/repeating/IU-OS.git
+  256  git push origin master
+  257  git status
+  258  ls
+  259  git add week1
+  260  git status
+  261  git commite "Week1 homework"
+  262  git commit "Week1 homework"
+  263  git commit -m "Week1 homework"
+  264  git add ./week1
+  265  git status
+  266  git add .
+  267  git status
+  268  cd week1
+  269  ls
+  270  cd ~
+  271  git status
+  272  git add week1
+  273  git status
+  274  git commit -m "Week1 homework"
+  275  git push origin master
+  276  git remote add origin https://github.com/repeating/IU-OS.git
+  277  git push origin master
+  278  git pull
+  279  git status
+  280  git push origin master
+  281  git push --help
+  282  git pull
+  283  git reset --hard origin/branch-name
+  284  git reset --hard origin/master
+  285  git status
+  286  ls
+  287  git add week01
+  288  git status
+  289  git add .
+  290  git status
+  291  git ls
+  292  list
+  293  git list
+  294  git reset <first-commit-sha>^ .cd 
+  295  git reset HEAD~3 .
+  296  git stash pop
+  297  git log
+  298  git push origin master
+  299  git ls-tree -r master --name-only
+  300  git ls-tree -r origin --name-only
+  301  ls
+  302  whereami
+  303  whereiam
+  304  whereami
+  305  ls
+  306  ls 
+  307  git status
+  308  git add .
+  309  git status
+  310  ls
+  311  ls week01/
+  312  git log
+  313  git status
+  314  ls 
+  315  ls week01/
+  316  ls
+  317  cd week01
+  318  ls -la
+  319  cat ...
+  320  ls
+  321  history
+  322  touch ex1.txt
+  323  ls -r /usr/bin/ | grep gcc > ex1.txt
+  324  cat ex1.txt
+  325  history > ex2.txt
