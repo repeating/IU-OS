@@ -1,0 +1,2 @@
+VirtualMemory has some Virtual adresses that are mapped to Physical adresses in PhysicalMemory.
+There exist more Virtual adresses than Physical address.
