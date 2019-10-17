@@ -1,0 +1,18 @@
+when max sequence is 100 then max number of misses == 100.
+
+if
+s(1) = 1
+s(n) = s(n-1)
+s(n%(n+1)) = 1
+then
+frames = 10, n < 11 -> #misses = n
+frames = 10, n >= 11, always miss
+
+
+if 
+s(1) = 1 
+s(2) = 1 
+s(3) = 1 
+s(n) = s(n-3) + 1
+then
+miss = n  
