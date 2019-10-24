@@ -1,0 +1,7 @@
+$ chmod -x _ex3.txt
+$ chmod 707 _ex3.txt
+$ chmod g=u _ex3.txt
+
+600 -> read and write only for owner  
+775 -> read, write and execute for everyone, excluding public write
+777 -> read, write and execute for everyone
