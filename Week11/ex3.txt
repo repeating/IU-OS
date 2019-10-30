@@ -1,0 +1,15 @@
+1 output:
+Hello
+Hello
+
+Put "Hello" in buffer. After fork they have "Hello" in their separate buffer.
+when printf("\n") each of them print buffer and \n after that.
+
+2 output:
+Hello
+
+
+
+Put "Hello\n" in buffer and print it.
+After fork they have empty buffer.
+when printf("\n") each of them print \n
