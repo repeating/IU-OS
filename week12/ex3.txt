@@ -1,0 +1,13 @@
+without O_SYNC:
+
+- file size: 10M
+	- DBUF: 100 bytes   -> sys0m0.184s
+	- DBUF: 512 bytes   -> sys0m0.044s
+
+with O_SYNC:
+
+- file size: 10M
+	- DBUF: 100 bytes   -> sys0m2.744s
+	- DBUF: 512 bytes   -> sys0m0.496s
+
+with O_SYNC time of operations become bigger,it is very important for speed, especially for small buffer.
