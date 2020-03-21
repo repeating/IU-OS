@@ -1,38 +1,30 @@
-TASK: move the database of your company from an RDBMS to MongoDB
+## The process of moving the database:
 
-1. Firstly I retrieved restore.sql from postgree directory file to my new created database `dvdrental`:
+1) First of all, I imported the data from `restore.sql` and created a new data base `dvdrental` by doing so:
 ```console
 $ psql -U postgres
 postgres=# CREATE DATABASE dvdrental;
 postgres=# \q
 $ psql -U postgres -d dvdrental -f restore.sql
 ```
-2. ####Starting servers####
-#####Mongo#####
-For running mongodb server:
+
+2) Then, I converted the SQL database into JSON-format and stored the data in text files in folder `jsons`.
+
+3)  I wrote a python script `script.py` that reads all text files in folder `jsons` and create a new Mongo collection according to the file new, and insterts all units in the txt file into our Mongo database:
 ```console
-$ sudo mongod
+documents = text.split('\n')
+    for document in documents:
+        if document == '':
+            continue
+        dict = json.loads(document)
+        collection.insert_one(dict)
 ```
-In another terminal window run ```$ mongo``` for openning mongo console\
-```show dbs``` for showing all dbs in mongo\
-#####PostgreSQL#####
-For running psql server:
-```console
-$ pg_ctl -D /usr/local/var/postgres start
-```
-Running the psql console
-```console
-$ psql -U postgres
-```
-Shut down the server
-```console
-$ pg_ctl -D /usr/local/var/postgres stop
-```
-3. I wrote the script.py that connects to both of databases(Postgres, MongoDB) and table by table copies all entries from postgres to mongodb. There were some issues with compatibility of datatypes:
-    * date in postgres was changed to date in mongodb(using datetime.datetime f-n)
-    * numeric in postgres was changed to double in mongodb(using conversion float())
-    * bytea in postgres was changed to binary data in mongodb(using the method tobytes())
-4. Adjustments:
-   * In SQL DB there were fields in the tables that could be empty(None), so I didn't add those fields if they were empty according to flexibility of documents in mongo.
-   * I don't see any profit in merging the tables, because they constructed logically with the aim of no memory consumption and data anomolies at all. One thing that we could do in moving the tables, we could optimize the tables with composite primary keys. We have 2 such tables: film_category and film_actor. I did optimization for film_category table(e.g. One film can have multiple categories, in SQL we could not store several categories for 1 film in the cell, but in mongo document we can afford it.) As a consequence, we do not need category table, so we can merge it with film_category table via category_id. I did not optimize film_actor table, because for 2nd query I need to look for films in which particular actor has played as well as for actors acted in particular film.
-   * One more adjustment was done for speeding up the 4th query: in inventory table for each film_id was added category field.
+
+##  The adjustments that were necessary for the new database:
+
+The only adjustment was needed for the new database was the empty columns that might appear in SQL in some rows. In Mongodb, all the field should have some values, and the data fields inside one row is dynamic not fixed.
+
+
+## Comments on the performance of the queries:
+
+Queries 1 and 3 are working perfectly in a fast runtime. Query 2 was noticeably slow because of the big number of nested searching operations made to find some document in another collection.
