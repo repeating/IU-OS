@@ -27,4 +27,4 @@ The only adjustment was needed for the new database was the empty columns that m
 
 ## Comments on the performance of the queries:
 
-Queries 1 and 3 are working perfectly in a fast runtime. Query 2 was noticeably slow because of the big number of nested searching operations made to find some document in another collection.
+Queries 1 and 2 are working perfectly in a fast runtime. A csv file was created for qeuery one called `q2.csv`. Query 3 was noticeably slow because of the big number of nested searching operations made to find some document in another collection.
